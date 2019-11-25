@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+* git clone https://github.com/vlasad/rps.git
+* bundle install
+* rails s
 
-Things you may want to cover:
+## Play
+* open browser
+* send request
+    * http://localhost:3000/?choice=scissors
+    * http://localhost:3000/?choice=rock
+    * http://localhost:3000/?choice=paper
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Responses
+* If you provide a bad choice or don't provide it at all, you will get bad_request status and page with text "invalid choice"
+* In the case of good choice, the format page is like:
+    ```
+    User's choice: scissors
+    Server's choice: rock
+    Result: lost
+    ```

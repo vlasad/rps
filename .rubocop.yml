@@ -1,3 +1,6 @@
+StringLiterals:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 

@@ -13,7 +13,7 @@ module Opponents
       @opponents.each do |op|
         @attempts.times do
           result = op.choice
-          return result if op.errorMsg.blank?
+          return result if op.error_msg.blank?
         end
       end
       ''
